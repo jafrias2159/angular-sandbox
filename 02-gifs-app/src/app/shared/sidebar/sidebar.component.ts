@@ -12,4 +12,8 @@ export class SidebarComponent {
   public get historial(): string[] {
     return [...this.gifService.historial];
   }
+
+  public buscar(busqueda: string): void {
+    this.gifService.añadirBusqueda(busqueda);
+  }
 }
